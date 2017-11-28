@@ -45,8 +45,5 @@ sub toRNA {
 # concatinated them and store in concatDna
 my $concatDna = getAndCleanFileContents($ARGV[0]) . getAndCleanFileContents($ARGV[1]);
 # convert the DNA to RNA and reverse it
-$concatDna = reverse toRNA($concatDna);
-
-print("Non-Formatted: \n");
-print($concatDna . "\n\n");
+print(reverse toRNA($concatDna));
 
